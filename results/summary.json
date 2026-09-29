@@ -1,0 +1,78 @@
+{
+  "n_datasets": 27,
+  "lstm_avg_test_mse": 0.7331996688808199,
+  "lstm_avg_test_r2": 0.048127422079244475,
+  "transformer_avg_test_mse": 1.6584210145592295,
+  "transformer_avg_test_r2": -1.145519339433667,
+  "n_models_total": 54,
+  "n_flagged_suspicious": 8,
+  "flagged_models": [
+    {
+      "dataset_id": 4,
+      "arch": "LSTM",
+      "reasons": [
+        "train/val divergence: val_mse=1.6436 is 164358184.6x train_mse=0.0000",
+        "high-capacity-low-data: n_train=8 < feature_dim=128 with train_r2=1.0000"
+      ]
+    },
+    {
+      "dataset_id": 4,
+      "arch": "Transformer",
+      "reasons": [
+        "train/val divergence: val_mse=3.6575 is 365753412.7x train_mse=0.0000",
+        "high-capacity-low-data: n_train=8 < feature_dim=64 with train_r2=1.0000"
+      ]
+    },
+    {
+      "dataset_id": 11,
+      "arch": "LSTM",
+      "reasons": [
+        "train/val divergence: val_mse=2.6508 is 265074122.5x train_mse=0.0000",
+        "high-capacity-low-data: n_train=8 < feature_dim=128 with train_r2=1.0000"
+      ]
+    },
+    {
+      "dataset_id": 11,
+      "arch": "Transformer",
+      "reasons": [
+        "train/val divergence: val_mse=6.2060 is 620600578.8x train_mse=0.0000",
+        "high-capacity-low-data: n_train=8 < feature_dim=64 with train_r2=1.0000",
+        "worse-than-naive despite good train fit: val_mse=6.2060 > 5x naive baseline=1.2047 while train_mse=0.0000"
+      ]
+    },
+    {
+      "dataset_id": 17,
+      "arch": "LSTM",
+      "reasons": [
+        "train/val divergence: val_mse=1.3795 is 137949573.9x train_mse=0.0000",
+        "high-capacity-low-data: n_train=8 < feature_dim=128 with train_r2=1.0000"
+      ]
+    },
+    {
+      "dataset_id": 17,
+      "arch": "Transformer",
+      "reasons": [
+        "train/val divergence: val_mse=4.7888 is 478880181.0x train_mse=0.0000",
+        "high-capacity-low-data: n_train=8 < feature_dim=64 with train_r2=1.0000",
+        "worse-than-naive despite good train fit: val_mse=4.7888 > 5x naive baseline=0.4726 while train_mse=0.0000"
+      ]
+    },
+    {
+      "dataset_id": 23,
+      "arch": "LSTM",
+      "reasons": [
+        "train/val divergence: val_mse=0.7825 is 78247847.9x train_mse=0.0000",
+        "high-capacity-low-data: n_train=8 < feature_dim=128 with train_r2=1.0000"
+      ]
+    },
+    {
+      "dataset_id": 23,
+      "arch": "Transformer",
+      "reasons": [
+        "train/val divergence: val_mse=4.8346 is 483462515.3x train_mse=0.0000",
+        "high-capacity-low-data: n_train=8 < feature_dim=64 with train_r2=1.0000",
+        "worse-than-naive despite good train fit: val_mse=4.8346 > 5x naive baseline=0.3123 while train_mse=0.0000"
+      ]
+    }
+  ]
+}
